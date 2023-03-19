@@ -1,0 +1,64 @@
+local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
+
+game.StarterGui:SetCore("SendNotification", {
+Title = "nvxqware",
+Text = "nvxqware injected!",
+Duration = 3,
+})
+
+local X = Material.Load({
+    Title = "nvxqware",
+    Style = 3,
+    SizeX = 220,
+    SizeY = 260,
+    Theme = "Dark",
+    ColorOverrides = {
+        MainFrame = Color3.fromRGB(13,13,13)
+    }
+})
+
+local Y = X.New({
+    Title = "1"
+})
+
+local A = Y.Button({
+    Text = "Unfair Hub",
+    Callback = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/unfair/main/rblxhub.lua'),true))()
+    end,
+    Menu = {
+        Information = function(self)
+            X.Banner({
+                Text = "Very nice Script Hub! made by Unfair#0160"
+            })
+        end
+    }
+})
+
+local A = Y.Button({
+    Text = "rblxscripts.net gui",
+    Callback = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/rblxscriptsnet/scripts/main/phantomforces1'),true))()
+    end,
+    Menu = {
+        Information = function(self)
+            X.Banner({
+                Text = "rblxscripts.net gui for Phantom Forces"
+            })
+        end
+    }
+})
+
+local A = Y.Button({
+    Text = "Strawhook",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/VoidMasterX/strawhook/main/script.lua", true))()
+    end,
+    Menu = {
+        Information = function(self)
+            X.Banner({
+                Text = "Strawhook gud"
+            })
+        end
+    }
+})
