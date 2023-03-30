@@ -48,17 +48,3 @@ local A = Y.Button({
         end
     }
 })
-
-local A = Y.Button({
-    Text = "Strawhook",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/VoidMasterX/strawhook/main/script.lua", true))()
-    end,
-    Menu = {
-        Information = function(self)
-            X.Banner({
-                Text = "Strawhook gud"
-            })
-        end
-    }
-})
